@@ -17,8 +17,14 @@ const fadeUp = {
 function Projects() {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
-    const githubUsername = "AbhisekWebDev";
-    const selectedRepos = ["Academic-Admin-Sys", "A.I.E.M.D-Project-GTTI", "JS-Weather-API"];
+    const githubUsername = "rohitbhosale409";
+    const selectedRepos = [
+        "Business_hub",
+        "quickbite",
+        "Shopora-website",
+        "Academix-website",
+        "Amezora-Clone",
+    ];
 
     useEffect(() => {
         const fetchProjects = async () => {
@@ -56,9 +62,9 @@ function Projects() {
         <div id="projects" className="w-full px-4 py-20 relative">
             <div className="max-w-6xl mx-auto">
                 <motion.h1
-                    initial={{ opacity: 0, y: 20 }} 
-                    whileInView={{ opacity: 1, y: 0 }} 
-                    transition={{ duration: 0.6 }} 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
                     // viewport={{ once: true }} 
                     // variants={fadeUp}
                     className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white"
@@ -82,8 +88,8 @@ function Projects() {
                         {projects.map((p, i) => (
                             <SwiperSlide key={i}>
                                 <motion.div
-                                    initial={{ opacity: 0, y: 50 }} 
-                                    whileInView={{ opacity: 1, y: 0 }} 
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: i * 0.1 }}
                                     // CHANGED: Reduced rounded corners (rounded-2xl) and shadow for a tighter look
                                     className="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-slate-700 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group h-full flex flex-col max-w-sm mx-auto"

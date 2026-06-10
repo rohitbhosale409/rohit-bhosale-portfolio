@@ -17,19 +17,19 @@ function Navbar() {
   ]
 
   const handleScroll = (id) => {
-  const element = document.querySelector(id)
-  if (!element) return
+    const element = document.querySelector(id)
+    if (!element) return
 
-  setMenuOpen(false)
+    setMenuOpen(false)
 
-  // wait for menu close animation
-  setTimeout(() => {
-    element.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    })
-  }, 300)
-}
+    // wait for menu close animation
+    setTimeout(() => {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }, 300)
+  }
 
   return (
     <motion.nav
@@ -44,7 +44,7 @@ function Navbar() {
         whileHover={{ scale: 1.05 }}
         className='text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent cursor-pointer'
       >
-        <a href="#home">AK</a>
+        <a href="#home">RB</a>
       </motion.div>
 
       {/* Desktop Nav */}

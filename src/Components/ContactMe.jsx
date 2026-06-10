@@ -26,17 +26,17 @@ function ContactMe() {
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
-          console.log(result.text)
-          setSubmitStatus('success')
-          setIsSubmitting(false)
-          e.target.reset() // Clear the form
-          
-          // Clear success message after 5 seconds
-          setTimeout(() => setSubmitStatus(null), 5000)
+        console.log(result.text)
+        setSubmitStatus('success')
+        setIsSubmitting(false)
+        e.target.reset() // Clear the form
+
+        // Clear success message after 5 seconds
+        setTimeout(() => setSubmitStatus(null), 5000)
       }, (error) => {
-          console.log(error.text)
-          setSubmitStatus('error')
-          setIsSubmitting(false)
+        console.log(error.text)
+        setSubmitStatus('error')
+        setIsSubmitting(false)
       })
   }
 
@@ -48,7 +48,7 @@ function ContactMe() {
   return (
     // Added 'id="contact"' and dark mode background transition
     <section id="contact" className="w-full px-4 py-20 flex justify-center transition-colors duration-300">
-      
+
       <motion.div
         // CHANGED: max-w-xl (narrower), dark mode colors, rounded-2xl
         className="max-w-xl w-full bg-white dark:bg-slate-800 shadow-xl rounded-2xl p-8 border border-gray-200 dark:border-slate-700"
@@ -71,7 +71,7 @@ function ContactMe() {
 
         {/* Form */}
         <motion.form
-          ref={form} 
+          ref={form}
           onSubmit={sendEmail}
           variants={fadeUp}
           initial="hidden"
@@ -155,36 +155,36 @@ function ContactMe() {
             whileTap={{ scale: 0.98 }}
             type="submit"
             className={`w-full py-3.5 font-bold rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all mt-2 
-              ${isSubmitting 
-                ? "bg-gray-400 cursor-not-allowed" 
+              ${isSubmitting
+                ? "bg-gray-400 cursor-not-allowed"
                 : "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-blue-500/30"
               }`}
           >
-          {isSubmitting ? (
+            {isSubmitting ? (
               "Sending..."
             ) : (
               <>
-            <FaPaperPlane className="animate-pulse" />
-            Send Message
-            </>
+                <FaPaperPlane className="animate-pulse" />
+                Send Message
+              </>
             )}
           </motion.button>
           {/* Success / Error Messages */}
           {submitStatus === 'success' && (
-             <motion.p 
-               initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-               className="text-green-500 text-center font-medium flex items-center justify-center gap-2 mt-2"
-             >
-               <FaCheckCircle /> Message sent successfully!
-             </motion.p>
+            <motion.p
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+              className="text-green-500 text-center font-medium flex items-center justify-center gap-2 mt-2"
+            >
+              <FaCheckCircle /> Message sent successfully!
+            </motion.p>
           )}
           {submitStatus === 'error' && (
-             <motion.p 
-               initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-               className="text-red-500 text-center font-medium mt-2"
-             >
-               Oops! Something went wrong. Please try again.
-             </motion.p>
+            <motion.p
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+              className="text-red-500 text-center font-medium mt-2"
+            >
+              Oops! Something went wrong. Please try again.
+            </motion.p>
           )}
         </motion.form>
       </motion.div>

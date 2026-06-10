@@ -1,38 +1,37 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
-import { SiLeetcode } from 'react-icons/si';
-
+import { SiYoutube } from 'react-icons/si';
 const MySocials = () => {
-  
+
   // Column 1: Coding Platforms
   const codingSocials = [
-    { 
-      name: "GitHub", 
-      icon: <FaGithub />, 
-      link: "https://github.com/AbhisekWebDev", 
+    {
+      name: "GitHub",
+      icon: <FaGithub />,
+      link: "https://github.com/rohitbhosale409",
       color: "bg-gray-800 text-white hover:bg-gray-700 border-gray-700"
     },
-    { 
-      name: "LeetCode", 
-      icon: <SiLeetcode />, 
-      link: "https://leetcode.com/AbhisekWebDev", 
-      color: "bg-yellow-600/10 text-yellow-600 dark:text-yellow-500 hover:bg-yellow-600/20 border-yellow-600/20"
-    }
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/in/rohitbhosale409/",
+      color: "bg-blue-600/10 text-blue-600 dark:text-blue-500 hover:bg-blue-600/20 border-blue-600/20"
+    },
   ];
 
   // Column 2: Professional & Social
   const networkSocials = [
-    { 
-      name: "LinkedIn", 
-      icon: <FaLinkedin />, 
-      link: "https://linkedin.com/in/abhisek-kumar-2316801a7", 
-      color: "bg-blue-600/10 text-blue-600 dark:text-blue-500 hover:bg-blue-600/20 border-blue-600/20"
+    {
+      name: "YouTube",
+      icon: <SiYoutube />,
+      link: "https://www.youtube.com/@rohitbhosale5109",
+      color: "bg-red-500/10 text-red-500 dark:text-red-400 hover:bg-red-500/20 border border-red-500/20",
     },
-    { 
-      name: "Instagram", 
-      icon: <FaInstagram />, 
-      link: "https://instagram.com/yourusername", 
+    {
+      name: "Instagram",
+      icon: <FaInstagram />,
+      link: "https://www.instagram.com/r_o_h_i_t_b_h_o_s_a_l_e?igsh=MXE0YnJhcnFpOWI5Yw==",
       color: "bg-pink-600/10 text-pink-600 dark:text-pink-500 hover:bg-pink-600/20 border-pink-600/20"
     }
   ];
@@ -50,8 +49,8 @@ const MySocials = () => {
   return (
     <section id="contact" className="py-20 transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-6">
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
@@ -62,9 +61,9 @@ const MySocials = () => {
 
         {/* 2-Column Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          
+
           {/* COLUMN 1: CODING */}
-          <motion.div 
+          <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="show"
@@ -74,7 +73,7 @@ const MySocials = () => {
               <span className="text-blue-500">&lt;/&gt;</span> Coding Profiles
             </h3>
             {codingSocials.map((social, index) => (
-              <motion.a 
+              <motion.a
                 key={index}
                 variants={itemVariants}
                 href={social.link}
@@ -92,7 +91,7 @@ const MySocials = () => {
           </motion.div>
 
           {/* COLUMN 2: SOCIALS */}
-          <motion.div 
+          <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="show"
@@ -102,7 +101,7 @@ const MySocials = () => {
               <span className="text-blue-500">@</span> Social Network
             </h3>
             {networkSocials.map((social, index) => (
-              <motion.a 
+              <motion.a
                 key={index}
                 variants={itemVariants}
                 href={social.link}
