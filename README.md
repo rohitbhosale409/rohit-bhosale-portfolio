@@ -1,27 +1,76 @@
-# 🚀 Personal Portfolio | Abhisek Kumar
+# 🚀 Personal Portfolio | Rohit Bhosale
 
-A responsive, high-performance portfolio website showcasing my journey as a Full-Stack Web Developer. Built with the MERN stack and optimized for speed and SEO.
+A modern, responsive portfolio website showcasing my skills, projects, and experience as a Frontend Developer. Built with React.js, Vite, and modern web technologies, focusing on performance, clean design, and user experience.
 
-**🔗 Live Demo:** [my-portfolio-gamma-pied-15.vercel.app](https://my-portfolio-gamma-pied-15.vercel.app/)
+**🔗 Live Demo:** [Add Your Vercel Link Here](https://your-portfolio-url.vercel.app)
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** React.js, Vite, Tailwind CSS (or your styling choice)
-- **Backend:** Node.js, Express (if applicable)
-- **Deployment:** Vercel
-- **Icons & Assets:** Lucide React / FontAwesome
 
-## ✨ Key Features
-- **Project Gallery:** Detailed showcase of MERN & Python projects.
-- **Dynamic Contact Form:** Integrated with [e.g., EmailJS/Formspree].
-- **Responsive Design:** Optimized for mobile, tablet, and desktop views.
-- **Resume Integration:** One-click download for my latest CV.
-
-## 🚀 Local Setup
-1. Clone the repo: `git clone https://github.com/AbhisekWebDev/your-repo-name.git`
-2. Install dependencies: `npm install`
-3. Start development server: `npm run dev`
+* **Frontend:** React.js, JavaScript, Vite, Tailwind CSS
+* **Version Control:** Git & GitHub
+* **Deployment:** Vercel
+* **Icons & Assets:** React Icons, Framer Motion
 
 ---
-📫 Reach me at: [devabhikumar2026@gmail.com](mailto:devabhikumar2026.com)
+
+## ✨ Features
+
+* **Modern Portfolio Design:** Clean and professional user interface.
+* **Project Showcase:** Display of my featured projects with GitHub links.
+* **Responsive Design:** Optimized for desktop, tablet, and mobile devices.
+* **Skills Section:** Highlights my technical expertise and tools.
+* **Resume Download:** Quick access to my latest resume.
+* **Contact Section:** Easy ways to connect with me.
+* **Dark/Light Theme:** Enhanced user experience with theme switching.
+
+---
+
+## 🚀 Featured Projects
+
+* **Business Hub** – Business-focused web application.
+* **QuickBite** – Modern food ordering website.
+* **Shopora Website** – E-commerce website project.
+* **Academix Website** – Educational platform website.
+
+---
+
+## 🚀 Local Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/rohitbhosale409/rohit-bhosale-portfolio.git
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd rohit-bhosale-portfolio
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📫 Connect With Me
+
+* GitHub: https://github.com/rohitbhosale409
+* LinkedIn: Add Your LinkedIn Profile
+* YouTube: https://www.youtube.com/@rohitbhosale5109
+* Email: Add Your Email Address
+
+---
+
+⭐ If you like this portfolio, feel free to star the repository!
