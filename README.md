@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing my skills, projects, and experience as a Frontend Developer. Built with React.js, Vite, and modern web technologies, focusing on performance, clean design, and user experience.
 
-**🔗 Live Demo:** [Add Your Vercel Link Here](https://your-portfolio-url.vercel.app)
+**🔗 Live Demo:** [Add Your Vercel Link Here](https://rohit-bhosale-portfolio.netlify.app/)
 
 ---
 
@@ -67,9 +67,9 @@ npm run dev
 ## 📫 Connect With Me
 
 * GitHub: https://github.com/rohitbhosale409
-* LinkedIn: Add Your LinkedIn Profile
+* LinkedIn: https://www.linkedin.com/in/rohitbhosale409/
 * YouTube: https://www.youtube.com/@rohitbhosale5109
-* Email: Add Your Email Address
+* Email: rohitbhosale409@gmail.com
 
 ---
 
